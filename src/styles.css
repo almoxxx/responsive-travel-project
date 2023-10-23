@@ -1,7 +1,82 @@
-h1 {
+body {
   font-family: "Poppins";
+  background: linear-gradient(
+    104.3deg,
+    rgb(253, 243, 243) 10.9%,
+    rgb(248, 231, 231) 27.8%,
+    rgb(160, 112, 161) 101.7%
+  );
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/hofburg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 260px;
+  padding-bottom: 260px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
   line-height: 144px;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 72px;
+}
+
+header h3 {
+  line-height: 1.5;
+  letter-spacing: 3px;
+}
+
+header a {
+  display: inline-block;
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: white;
+  color: black;
+  padding: 16px 32px;
+  margin-top: 32px;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  header h1 {
+    font-size: 48px;
+    line-height: 72px;
+  }
+  header h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  header h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
