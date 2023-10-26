@@ -37,8 +37,9 @@ body {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
+  aspect-ratio: 1 /1;
 }
 
 header {
@@ -143,6 +144,11 @@ section.secondary {
   text-align: center;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
 .card {
   background: linear-gradient(
     109.6deg,
@@ -152,6 +158,10 @@ section.secondary {
   border-radius: 5px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   padding: 10px;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .card h4 {
@@ -253,5 +263,11 @@ footer ul {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
